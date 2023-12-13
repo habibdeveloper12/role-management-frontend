@@ -3,7 +3,7 @@ import Home from "./Pages/Home/Home";
 
 import SignUp from "./Pages/SignUp/SignUp";
 import RequireAuth from "./hooks/RequireAuth/RequireAuth";
-import Table from "./Pages/table/Table";
+import Table from "./Pages/Table/Table";
 
 function App() {
   return (
