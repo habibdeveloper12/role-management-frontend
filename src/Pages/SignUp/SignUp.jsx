@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from "react";
-import Sociallogin from "../components/Sociallogin";
+import Sociallogin from "../../components/Sociallogin";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { formValidation, formValidationSignUp } from "../utils/formValidation";
+import {
+  formValidation,
+  formValidationSignUp,
+} from "../../utils/formValidation";
 import { useLocation, useNavigate } from "react-router-dom";
-import Loading from "../components/Loading";
+import Loading from "../../components/Loading";
 import { toast } from "react-toastify";
 import { updateProfile } from "firebase/auth";
 import {
   useCreateUserWithEmailAndPassword,
   useSendEmailVerification,
 } from "react-firebase-hooks/auth";
-import auth from "../firebase.init";
+import auth from "../../firebase.init";
 import axios from "axios";
 
 const SignUp = () => {

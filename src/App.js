@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
-import Table from "./Pages/Table";
-import SignUp from "./Pages/SignUp";
+
+import SignUp from "./Pages/SignUp/SignUp";
 import RequireAuth from "./hooks/RequireAuth/RequireAuth";
+import Table from "./Pages/table/Table";
 
 function App() {
   return (

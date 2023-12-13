@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import auth from "../firebase.init";
-import { ADMIN, SUPER_USER } from "../constant/user";
+import auth from "../../firebase.init";
+import { ADMIN, SUPER_USER } from "../../constant/user";
 
 const Table = () => {
   const [user, loading, error] = useAuthState(auth);

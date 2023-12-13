@@ -1,18 +1,18 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { formValidationLogin } from "../utils/formValidation";
+import { formValidationLogin } from "../../utils/formValidation";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import {
   useAuthState,
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
-import auth from "../firebase.init";
-import Loading from "../components/Loading";
+import auth from "../../firebase.init";
+import Loading from "../../components/Loading";
 import axios from "axios";
 import { toast } from "react-toastify";
-import Sociallogin from "../components/Sociallogin";
+import Sociallogin from "../../components/Sociallogin";
 import { useNavigate, useNavigation } from "react-router-dom";
 
 const Login = () => {
